@@ -68,4 +68,10 @@ Vagrant.configure("2") do |config|
   #   apt-get update
   #   apt-get install -y apache2
   # SHELL
+
+
+
+  ## Add the script I want to test
+  config.vm.provision "file", source: "test.sh", destination: "/home/vagrant/test.sh"
+
 end
